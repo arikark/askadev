@@ -7,6 +7,7 @@ import Form from "@/components/form";
 import Logos from "@/components/logos";
 import Particles from "@/components/ui/particles";
 import Footer from "@/components/footer";
+import { DevProfileBanner } from "@/components/dev-profile-banner";
 
 export default function Home() {
   const [name, setName] = useState<string>("");
@@ -108,9 +109,8 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center overflow-x-clip pt-12 md:pt-24 justify-center">
-      <section className="flex flex-col items-center  px-4 sm:px-6 lg:px-8">
-
+    <main className="flex min-h-screen flex-col items-center justify-center overflow-x-clip pt-12 md:pt-24">
+      <section className="flex flex-col items-center px-4 sm:px-6 lg:px-8">
         <CTA />
 
         <Form
@@ -122,7 +122,6 @@ export default function Home() {
           loading={loading}
         />
       </section>
-
 
       <Particles
         quantityDesktop={350}

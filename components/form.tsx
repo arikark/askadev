@@ -58,9 +58,13 @@ export default function Form({
       </motion.div>
       <motion.div variants={itemVariants}>
         <EnhancedButton
+          type="submit"
           variant="expandIcon"
           Icon={FaArrowRightLong}
-          onClick={handleSubmit}
+          onClick={(e) => {
+            e.preventDefault();
+            handleSubmit();
+          }}
           iconPlacement="right"
           className="mt-2 w-full"
           disabled={loading}>

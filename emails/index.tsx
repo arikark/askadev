@@ -29,18 +29,18 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         />
         <Text style={greeting}>Hi {userFirstname},</Text>
         <Text style={paragraph}>
-          Thanks for joining the waitlist for our Next.js + Notion CMS waitlist
+          {`Thanks for joining the waitlist for our Next.js + Notion CMS waitlist
           template! I'm Lakshay, the developer behind this project. I'm glad to
-          have you on board.
+          have you on board.`}
         </Text>
         <Text style={paragraph}>
-          I'll keep you posted on the progress and notify you as soon as it's
+          {` I'll keep you posted on the progress and notify you as soon as it's
           ready for you to use. In the meantime, if you have any questions or
-          feedback, don't hesitate to reach out by replying directly to{" "}
+          feedback, don't hesitate to reach out by replying directly to `}
           <a href="mailto:lakshb.work@gmail.com" style={link}>
             this email {""}
           </a>
-          — I'm here to listen!
+          —  {`I'm here to listen!`}
         </Text>
         <Text style={paragraph}>
           You can also follow me on X/Twitter for updates:{" "}
