@@ -7,7 +7,7 @@ const headerText = [
   "Looking to build an app?",
   "Hiring a CTO?",
   "Not sure where to start?",
-]
+];
 
 export default function CTA() {
   return (
@@ -25,16 +25,17 @@ export default function CTA() {
       }}
       initial="hidden"
       animate="visible">
-      <motion.div variants={{
-        hidden: { opacity: 0 },
-        visible: {
-          opacity: 1,
-          transition: {
-            duration: 1,
-            delay: 8,
+      <motion.div
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              duration: 1,
+              delay: 8,
+            },
           },
-        },
-      }}>
+        }}>
         <div className="flex items-center justify-center">
           <div className="flex w-fit items-center justify-center rounded-full bg-muted/80 text-center">
             <AnimatedShinyText className="px-4 py-1">
@@ -44,19 +45,14 @@ export default function CTA() {
         </div>
       </motion.div>
 
-
-      {
-        headerText.map((text, index) => (
-          <motion.div key={index} variants={itemVariants}>
-            <TextBlur
-              className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-              text={text}
-            />
-          </motion.div>
-        ))
-      }
-
-
+      {headerText.map((text, index) => (
+        <motion.div key={index} variants={itemVariants}>
+          <TextBlur
+            className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
+            text={text}
+          />
+        </motion.div>
+      ))}
 
       <motion.div variants={itemVariants}>
         <TextBlur
