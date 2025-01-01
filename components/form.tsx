@@ -27,7 +27,17 @@ export default function Form({
   return (
     <motion.div
       className="mt-6 flex w-full max-w-[24rem] flex-col gap-2"
-      variants={containerVariants}
+      variants={{
+        ...containerVariants,
+        visible: {
+          ...containerVariants.visible,
+          transition: {
+            ...containerVariants.visible.transition,
+            delayChildren: 6.5,
+            staggerChildren: 0.5,
+          },
+        },
+      }}
       initial="hidden"
       animate="visible">
       <motion.div variants={itemVariants}>
@@ -54,10 +64,10 @@ export default function Form({
           iconPlacement="right"
           className="mt-2 w-full"
           disabled={loading}>
-          {loading ? "Loading..." : "Join Waitlist!"}
+          {loading ? "Loading..." : "Join Our Waitlist!"}
         </EnhancedButton>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         variants={itemVariants}
         className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
         <p>For any queries, reach out at </p>
@@ -74,7 +84,7 @@ export default function Form({
           target="_blank">
           <FaGithub className="ml-0.5 h-5 w-5 transition-all duration-200 ease-linear hover:text-yellow-200" />
         </Link>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }
