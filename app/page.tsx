@@ -118,7 +118,7 @@ export default function Home() {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setShowCalendly(true);
-		}, 10000); // 11 seconds to allow CTA animation to complete
+		}, 9000); // 11 seconds to allow CTA animation to complete
 
 		return () => clearTimeout(timer);
 	}, []);

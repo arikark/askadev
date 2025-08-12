@@ -5,7 +5,7 @@ import { containerVariants, itemVariants } from "@/lib/animation-variants";
 const headerText = [
 	"Vibe coded an app?",
 	"Not quite there yet?",
-	"Not sure what's next?",
+	"Unsure what to do next?",
 ];
 
 export default function CTA() {
