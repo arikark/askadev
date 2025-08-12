@@ -9,7 +9,7 @@ const FigtreeFont = Figtree({ subsets: ["latin"] });
 export const metadata: Metadata = {
 	title: "Ask a dev",
 	description:
-		"Have an idea but not sure where to start? Hiring a developer but don't know what you are looking for? Ask a dev is a community of trusted developers who can help get started.",
+		"Stuck in a prompt loop? Vibe coded an app but it's not quite there yet? Get professional advice from experienced developers who can get it into the hands of users.",
 };
 
 export default function RootLayout({
