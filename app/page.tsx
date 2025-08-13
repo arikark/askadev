@@ -129,7 +129,7 @@ export default function Home() {
 				{!showCalendly ? (
 					<CTA />
 				) : (
-					<CalendlyWidget calendlyUrl="https://calendly.com/arielkark/30min" />
+					<CalendlyWidget calendlyUrl="https://calendly.com/d/csxn-rt7-sb9/dev-advice" />
 				)}
 			</section>
 
