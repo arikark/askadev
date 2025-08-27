@@ -30,7 +30,7 @@ export default function CalendlyWidget({ calendlyUrl }: CalendlyWidgetProps) {
 			console.log("Calendly widget: Initializing inline widget");
 			// Initialize the inline widget with custom styling
 			window.Calendly.initInlineWidget({
-				url: `${calendlyUrl}?background_color=1a1a1a&text_color=ffffff&primary_color=f0ff00`,
+				url: `${calendlyUrl}?hide_event_type_details=1&hide_landing_page_details=1&hide_gdpr_banner=1&background_color=1a1a1a&text_color=ffffff&primary_color=f0ff00`,
 				parentElement: calendlyRef.current,
 				prefill: {},
 				utm: {},
