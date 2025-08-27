@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { itemVariants } from "@/lib/animation-variants";
 
 interface CalendlyWidgetProps {
